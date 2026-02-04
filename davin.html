@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Portofolio Stranger Things</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        body {
+            background: radial-gradient(circle at top, #1a0000, #000);
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        header {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            animation: fadeIn 2s ease;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            color: #ff1a1a;
+            text-shadow: 0 0 20px red;
+            animation: glow 2s infinite alternate;
+        }
+
+        header p {
+            margin-top: 15px;
+            font-size: 1.2rem;
+            color: #ccc;
+        }
+
+        section {
+            padding: 80px 10%;
+        }
+
+        h2 {
+            color: #ff1a1a;
+            margin-bottom: 30px;
+            text-shadow: 0 0 10px red;
+        }
+
+        .about, .projects, .contact {
+            animation: slideUp 1.5s ease;
+        }
+
+        .skills .skill {
+            margin-bottom: 20px;
+        }
+
+        .skill span {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .bar {
+            width: 100%;
+            background: #330000;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .bar div {
+            height: 15px;
+            background: linear-gradient(90deg, red, #ff4d4d);
+            width: 0;
+            animation: loadBar 2s forwards;
+        }
+
+        .projects .card {
+            background: #110000;
+            padding: 20px;
+            border-left: 4px solid red;
+            margin-bottom: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .projects .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px red;
+        }
+
+        .contact a {
+            color: #ff4d4d;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #080000;
+            color: #777;
+        }
+
+        @keyframes glow {
+            from { text-shadow: 0 0 10px red; }
+            to { text-shadow: 0 0 30px red; }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes loadBar {
+            from { width: 0; }
+            to { width: var(--level); }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div>
+        <h1>DAVIN</h1>
+        <p>Project Davinza Rafasya XIIE</p>
+    </div>
+</header>
+
+<section class="about">
+    <h2>About Me</h2>
+    <p>
+        Saya davin saya adalah pelajar sma saya dikenal sebagai orang yang rajin dan sangat pinter di mapel apapun, saya tipe orang yang cepat mempunyai relasi baru
+    </p>
+</section>
+
+<section class="skills">
+    <h2>Skills</h2>
+
+    <div class="skill">
+        <span>Mudah mencari relasi baru</span>
+        <div class="bar"><div style="--level: 90%;"></div></div>
+    </div>
+
+    <div class="skill">
+        <span>Ada bakat dalam bermain game</span>
+        <div class="bar"><div style="--level: 85%;"></div></div>
+    </div>
+
+    <div class="skill">
+        <span>Suka Traveling</span>
+        <div class="bar"><div style="--level: 70%;"></div></div>
+    </div>
+
+</section>
+
+<section class="projects">
+    <h2>Projects</h2>
+
+    <div class="card">
+        <h3>Project Kelas 10</h3>
+        <p>Waktu kelas 10 saya mempunyai project exhibition kalo dari kelompok saya, saya membuat minuman yaitu minuman yang dinamakan magic water.</p>
+    </div>
+
+    <div class="card">
+        <h3>Project Kelas 11</h3>
+        <p>Waktu kelas 11 saya mempunyai project yaitu membuat short movie yang kita harus shooting berkali kali agar mendapatkan hasil maksimal.</p>
+    </div>
+</section>
+
+<section class="contact">
+    <h2>Contact Person</h2>
+    <a href="#">📧 Email: blsma.23241035@budiluhur.sch.id</a>
+    <a href="#">📱 WhatsApp: 08179960600</a>
+    <a href="#">📷 Instagram: @vinnnyyz</a>
+</section>
+
+<footer>
+    <p>© 2026 | Informatika Project - Stranger Things Theme</p>
+</footer>
+
+</body>
+</html>
